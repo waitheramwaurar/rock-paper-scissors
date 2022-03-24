@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+
+     <!-- Font Awesome icons -->
+     <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    
+     <!-- Bootstrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1 id="intro">Let's Play</h1>
+
+    <div class= "game-area row">
+        <!-- Computer side -->
+        <div class="col-lg-6">
+            <h1>Computer</h1>
+            <i class="icons fas fa-hand-rock fa-7x"></i>
+            <i class="icons fas fa-hand-paper fa-7x"></i>
+            <i class="icons fas fa-hand-scissors fa-7x"></i>
+
+            <p id="comp-choice"></p>
+        </div>
+        <!-- Player side -->
+
+        <div class="col-lg-6">
+            <div class="mb-3">
+                <!-- <label for="exampleFormControlInput1" class="form-label"></label> -->
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Type your name">
+              </div>
+
+            <i class="icons player-icons fas fa-hand-rock fa-7x" onclick="chooseRock()"></i>
+            <i class="icons player-icons fas fa-hand-paper fa-7x" onclick="choosePaper()" ></i>
+            <i class="icons player-icons fas fa-hand-scissors fa-7x" onclick="chooseScissors()" ></i>
+
+            <p id="result"></p>
+            
+        </div>
+    </div>
+
+    <div class="comment">
+        <h4 id="comments"></h4>
+
+        <div class="scoreboard row">
+            <div class='comp-side col-lg-6'>
+                <p class="comp-score"></p>
+            </div>
+            <div class='player-side col-lg-6'>
+                <p class="player-score"></p>
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
